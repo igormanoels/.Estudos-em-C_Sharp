@@ -12,7 +12,7 @@ namespace HelloWord
         {
 
             Console.WriteLine("Hello World!");
-           
+            //Livrai-me da maldição
             
         }
     }
