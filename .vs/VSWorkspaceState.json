@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\IniciandoEstudos",
+    "\\IniciandoEstudos\\IniciandoEstudos"
   ],
-  "SelectedNode": "\\.Estudos-em-C_Sharp.sln",
+  "SelectedNode": "\\IniciandoEstudos\\IniciandoEstudos\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

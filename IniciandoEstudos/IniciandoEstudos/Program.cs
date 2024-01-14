@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,32 +18,85 @@ namespace IniciandoEstudos
              * Canal: Vitor Lima - Ciência da Computação
              */
 
+            //TODA AENTRADA NO C# É DADA COMO STRING
             int num = 24;
             double num2 = 2.4441;
             float num3 = 2.4441F;
             char letra = 's';
             string palavra = "Programação";
             bool verdade = true;
+            // tipos primitivos
             var palavra2 = "programação";
             var num4 = 24;
-
-            // seção de comentários
-
+            // outra forma de decarar uma variável
+            dynamic numOUtexto = 3;
+            numOUtexto = "Palavra";
+            // variável dinamica, pode ter seu tipo alterado durante a execução
+            //const int testeConstante = 25;
+            // ao declarar uma variável como constante esse valor se torna imutável, seguindo o tipo definido
             /*
              * outra forma para seção de comentários
              */
 
-            Console.Write("Informe um número: ");
-            //escrever no console
+            //Entrada, Processamento e Saída
+            Console.Write("Informe seu Nome: ");
+            String nome = Console.ReadLine();
+            Console.WriteLine("Seja bem vindo, " + nome);
+            Console.Write(nome + ", qual é a sua idade: ");
+            int idade = int.Parse(Console.ReadLine());
 
-            var valor = Console.ReadLine();
-            //ao atribuir num como var ou String, ele receberá a entrada em forma de texto.
+            //Estruturas de Decisão
+            Console.WriteLine("\nVerifica se pode Votar e Dirigir!");
+            if (idade >= 18)
+            {
+                Console.WriteLine("Parabéns " + nome + ", você pode Votar e Dirigir.");
+            }
+            else
+            {
+                if (idade >= 16)
+                {
+                    Console.WriteLine(nome + ", você só pode votar.");
+                }
+                else
+                {
+                    Console.WriteLine(nome + ", infelizmente você não pode votar e nem dirigir.");
+                }
+            }
 
-            valor = valor + num;
-            // por var receber valores como String ele uni o número como se fosse um caracter
-            
-            Console.WriteLine("Você digitou " + valor);
-            // o operador + serve para concatenar as informações para printar na tela
+            //Operadores Lógicos && (AND/E) --- || (OR/OU)
+            Console.WriteLine("\nVerificando qual a sua faixa etária!");
+            if (idade >= 1 && idade <= 12)
+            {
+                Console.WriteLine("Você é uma criança.");
+            }
+            else
+            {
+                if (idade >= 13 && idade <= 17)
+                {
+                    Console.WriteLine("Você é um adolecente.");
+                }
+                else
+                {
+                    if (idade >= 18 && idade <= 64)
+                    {
+                        Console.WriteLine("Você é um adulto.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Você é um idoso.");
+                    }
+                }
+            }
+
+            //Método de Realizar Operações
+            Console.WriteLine("\n\nOperações");
+            Console.Write("Informe um número para saber o quadrado: ");
+            double n1 = double.Parse(Console.ReadLine());
+            double quadrado = n1 * n1;
+            Console.Write("O quadrado é: " + quadrado);
+
+            Console.ReadLine();
+            //usando no cosole para interrupção
         }
     }
 }
