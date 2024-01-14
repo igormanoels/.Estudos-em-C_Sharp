@@ -1,5 +1,0 @@
-H:\Programação\.Estudos-em-C_Sharp\Multiplicando\obj\Debug\net8.0\Multiplicando.GeneratedMSBuildEditorConfig.editorconfig
-H:\Programação\.Estudos-em-C_Sharp\Multiplicando\obj\Debug\net8.0\Multiplicando.AssemblyInfoInputs.cache
-H:\Programação\.Estudos-em-C_Sharp\Multiplicando\obj\Debug\net8.0\Multiplicando.AssemblyInfo.cs
-H:\Programação\.Estudos-em-C_Sharp\Multiplicando\obj\Debug\net8.0\Multiplicando.csproj.CoreCompileInputs.cache
-H:\Programação\.Estudos-em-C_Sharp\Multiplicando\obj\Debug\net8.0\Multiplicando.sourcelink.json

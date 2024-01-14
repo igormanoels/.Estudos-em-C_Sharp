@@ -1,0 +1,7 @@
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\obj\Debug\HelloWord.csproj.AssemblyReference.cache
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\obj\Debug\HelloWord.csproj.CoreCompileInputs.cache
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\bin\Debug\HelloWord.exe.config
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\bin\Debug\HelloWord.exe
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\bin\Debug\HelloWord.pdb
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\obj\Debug\HelloWord.exe
+H:\Programação\.Estudos-em-C_Sharp\PrimeiroPrograma\HelloWord\HelloWord\obj\Debug\HelloWord.pdb

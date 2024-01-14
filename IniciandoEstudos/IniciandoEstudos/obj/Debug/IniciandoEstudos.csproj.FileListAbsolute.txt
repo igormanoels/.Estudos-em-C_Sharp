@@ -1,0 +1,7 @@
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\bin\Debug\IniciandoEstudos.exe.config
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\bin\Debug\IniciandoEstudos.exe
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\bin\Debug\IniciandoEstudos.pdb
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\obj\Debug\IniciandoEstudos.csproj.AssemblyReference.cache
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\obj\Debug\IniciandoEstudos.csproj.CoreCompileInputs.cache
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\obj\Debug\IniciandoEstudos.exe
+H:\Programação\.Estudos-em-C_Sharp\IniciandoEstudos\IniciandoEstudos\obj\Debug\IniciandoEstudos.pdb
