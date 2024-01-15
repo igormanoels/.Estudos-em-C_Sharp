@@ -89,14 +89,47 @@ namespace IniciandoEstudos
             }
 
             //Método de Realizar Operações
-            Console.WriteLine("\n\nOperações");
+            Console.WriteLine("\nOperações");
             Console.Write("Informe um número para saber o quadrado: ");
             double n1 = double.Parse(Console.ReadLine());
             double quadrado = n1 * n1;
             Console.Write("O quadrado é: " + quadrado);
 
+            ExibirMsg();
+            //executa a função de acordo com a quantidade de vezes em que a função é chamada
+
+            ExibirMsg2(10);
+            //executa a função com uma passagem de parâmetro
+
+            Console.WriteLine("\nVamos cálcular a média com Passagem de Parâmetro.");
+            Console.Write("Informe a n1: ");
+            int nota1 = int.Parse(Console.ReadLine());
+            Console.Write("Informe a n2: ");
+            int nota2 = int.Parse(Console.ReadLine());
+            Console.Write("Informe a n3: ");
+            int nota3 = int.Parse(Console.ReadLine());
+
+            double media = CalcMedia(nota1, nota2, nota3);
+            Console.WriteLine("Média: " + media);
+
             Console.ReadLine();
             //usando no cosole para interrupção
+        }
+
+        static void ExibirMsg() //Função do tipo VOID pois não há retorno
+        {
+            Console.WriteLine("\n\nEssa mensagem é exibida apartir de uma função.");
+        }
+        
+        static void ExibirMsg2(int n)
+        {
+            Console.WriteLine("Sou um aluno nota " + n);
+        }
+        
+        static double CalcMedia(int a, int b, int c)
+        {
+            double media = ((a + b + c) / 3);
+            return media;
         }
     }
 }
