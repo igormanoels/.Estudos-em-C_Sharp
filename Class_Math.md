@@ -1,4 +1,4 @@
-#Tabela com as funções da classe Math em C#:
+# Tabela com as funções da classe Math em C#:
 
 | Função                   | Descrição                                                             |
 |--------------------------|-----------------------------------------------------------------------|
