@@ -5,3 +5,10 @@ C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWorld.csproj.AssemblyRefere
 C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
 C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWord.exe
 C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWord.pdb
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\bin\Debug\HelloWord.exe.config
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\bin\Debug\HelloWord.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\bin\Debug\HelloWord.pdb
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\obj\Debug\HelloWord.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\HelloWord\obj\Debug\HelloWord.pdb
