@@ -1,0 +1,7 @@
+C:\Users\sigor\source\repos\HelloWord\bin\Debug\HelloWord.exe.config
+C:\Users\sigor\source\repos\HelloWord\bin\Debug\HelloWord.exe
+C:\Users\sigor\source\repos\HelloWord\bin\Debug\HelloWord.pdb
+C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWord.exe
+C:\Users\sigor\source\repos\HelloWord\obj\Debug\HelloWord.pdb
