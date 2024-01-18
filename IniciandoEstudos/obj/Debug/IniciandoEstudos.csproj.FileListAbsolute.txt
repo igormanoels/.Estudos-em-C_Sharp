@@ -1,0 +1,7 @@
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\obj\Debug\IniciandoEstudos.csproj.AssemblyReference.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\obj\Debug\IniciandoEstudos.csproj.CoreCompileInputs.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\bin\Debug\IniciandoEstudos.exe.config
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\bin\Debug\IniciandoEstudos.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\bin\Debug\IniciandoEstudos.pdb
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\obj\Debug\IniciandoEstudos.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\IniciandoEstudos\obj\Debug\IniciandoEstudos.pdb
