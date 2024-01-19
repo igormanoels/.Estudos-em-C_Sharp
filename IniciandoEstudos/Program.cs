@@ -54,6 +54,8 @@ namespace IniciandoEstudos
                     OperacoesMatematicas();
                     break;
                 case 3:
+                    Console.Clear();
+                    VerificaVotarDirigir();
                     break;
                 case 4:
                     break;
@@ -164,6 +166,53 @@ namespace IniciandoEstudos
                 res = (Math.Sqrt(num1));
                 Console.WriteLine("Raiz Quadrada: " + res);
             }
+
+            Console.WriteLine("\n\n\nAperte 'ENTER' para continuar...");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine(nome + ", estamos de volta ao menu, o que deseja fazer agora?");
+            MenuInicial();
+        }
+
+        static void VerificaVotarDirigir()
+        {
+            Console.WriteLine("Verifica se pode Votar e Dirigir.");
+            Console.WriteLine(nome + ", agora a partir da sua idade vamos verificar o que você já pode fazer.");
+
+            if (idade == 0)
+            {
+                Console.Write("Por favor informe sua idade: ");
+                idade = int.Parse(Console.ReadLine());
+            }
+            else if (idade != 0)
+            {
+                Console.Write("\n" + idade + " anos é a idade cadastrada, está correto? ");
+                Console.Write("\nPor favor digite Y / N: ");
+                string letra = Console.ReadLine();
+
+                if (letra.Equals("N") || letra.Equals("n"))
+                {
+                    Console.Write("Por favor informe sua idade correta: ");
+                    idade = int.Parse(Console.ReadLine());
+                }
+            }
+
+            if (idade >= 18)
+            {
+                Console.WriteLine("\nParabéns " + nome + ", você pode Votar e Dirigir.");
+            }
+            else
+            {
+                if (idade >= 16)
+                {
+                    Console.WriteLine("\n" + nome + ", você só pode votar.");
+                }
+                else
+                {
+                    Console.WriteLine("\n" + nome + ", infelizmente você não pode votar e nem dirigir.");
+                }
+            }
+
 
 
             Console.WriteLine("\n\n\nAperte 'ENTER' para continuar...");
