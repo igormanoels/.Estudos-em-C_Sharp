@@ -26,7 +26,7 @@ namespace IniciandoEstudos
             Console.Write("\nEscolha uma das opções abaixo:" +
                 "\n1- Tipos de Variáveis, Entrada e Saída de Dados." +
                 "\n2- Operações Aritiméticas Simples." +
-                "\n3- Estruturas de Decisão - Descubra see você pode votar." +
+                "\n3- Estruturas de Decisão - Descubra se você pode votar." +
                 "\n4- Estruturas de Decisão com Switch - Menu de Ações Bancárias." +
                 "\n5- Estruturas de Repetição While, Do...While, Foreach e For." +
                 "\n6- " +
@@ -58,6 +58,8 @@ namespace IniciandoEstudos
                     VerificaVotarDirigir();
                     break;
                 case 4:
+                    Console.Clear();
+                    AplicacaoBancaria();
                     break;
                 case 5:
                     break;
@@ -84,7 +86,9 @@ namespace IniciandoEstudos
             char letra = 's';
             string palavra = "Programação";
             bool verdade = true;
-                
+            decimal dinheiros; //variável utilizada para valores financeiros
+
+
             var palavra2 = "programação";
             var num4 = 24;  // outra forma de decarar uma variável, atribuir a variável como "VAR", o programa irá assumir qual seu tipo apartir da entrada
             
@@ -213,6 +217,92 @@ namespace IniciandoEstudos
                 }
             }
 
+            Console.WriteLine("\n\n\nAperte 'ENTER' para continuar...");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine(nome + ", estamos de volta ao menu, o que deseja fazer agora?");
+            MenuInicial();
+        }
+        
+        static void AplicacaoBancaria()
+        {
+            double valor, taxa, tempo, juros, montante; //variável utilizada para valores financeiros
+
+            Console.WriteLine("Aplicação Bancária.");
+            Console.WriteLine(nome + ", aqui você terá acesso a ações similares a do seu Banco.");
+            Console.Write("Escolha uma das opções abaixo:" +
+                "\n1- Cálcular juros simples." +
+                "\n2- Cálcular juros compostos." +
+                "\n3- Amortização de empréstimo." +
+                "\n4- Investimento." +
+                "\n5- Cálculo de Parcelas." +
+                "\n6- Conversor de Moeda." +
+                "\n\nDigite a opção desejada: ");
+            
+            do
+            {
+                opcao = int.Parse(Console.ReadLine());
+                if (opcao <= 0 && opcao >= 7)
+                {
+                    Console.Write("Opção Inválida. Digite Novamente: ");
+                }
+            } while (opcao <= 0 && opcao >= 7);
+        
+            switch (opcao)
+            {
+                case 1:
+                    Console.WriteLine("\nCerto, então vamos cálcular o Juros Simples.");
+
+                    Console.Write("Favor informar o valor: ");
+                    valor = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar a taxa: ");
+                    taxa = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar o tempo em mesês: ");
+                    tempo = double.Parse(Console.ReadLine());
+
+                    if (taxa >= 1)
+                    {
+                        taxa = (taxa / 100);
+                    }
+
+                    juros = (valor * taxa * tempo);
+                    montante = juros + valor;
+                    Console.WriteLine("\nJuros Simples: R$ " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
+                    Console.WriteLine("Montante: R$ " + montante.ToString("C2"));
+                    break;
+                case 2:
+                    Console.WriteLine("\nCerto, então vamos cálcular o Juros Compostos.");
+
+                    Console.Write("Favor informar o valor: ");
+                    valor = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar a taxa: ");
+                    taxa = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar o tempo em mesês: ");
+                    tempo = double.Parse(Console.ReadLine());
+
+                    if (taxa >= 1)
+                    {
+                        taxa = (taxa / 100);
+                    }
+
+                    montante = (valor * Math.Pow((1 + taxa), tempo));
+                    juros = montante - valor;
+                    Console.WriteLine("\nJuros Simples: R$ " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
+                    Console.WriteLine("Montante: R$ " + montante.ToString("C2"));
+                    break;
+                case 3:
+                    Console.WriteLine("Teste 3");
+                    break;
+                case 4:
+                    Console.WriteLine("Teste 4");
+                    break;
+                case 5:
+                    Console.WriteLine("Teste 5");
+                    break;
+                case 6:
+                    Console.WriteLine("Teste 6");
+                    break;
+            }
 
 
             Console.WriteLine("\n\n\nAperte 'ENTER' para continuar...");
@@ -221,7 +311,6 @@ namespace IniciandoEstudos
             Console.WriteLine(nome + ", estamos de volta ao menu, o que deseja fazer agora?");
             MenuInicial();
         }
-
-
+        
     }
 }

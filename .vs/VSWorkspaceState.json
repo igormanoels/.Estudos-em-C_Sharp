@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HelloWord",
     "\\IniciandoEstudos"
   ],
-  "SelectedNode": "\\IniciandoEstudos\\App.config",
+  "SelectedNode": "\\IniciandoEstudos\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
