@@ -226,16 +226,16 @@ namespace IniciandoEstudos
         
         static void AplicacaoBancaria()
         {
-            double valor, taxa, tempo, juros, montante; //variável utilizada para valores financeiros
+            double valor, taxa, tempo, juros, montante, amortizacao; //variável utilizada para valores financeiros
 
             Console.WriteLine("Aplicação Bancária.");
             Console.WriteLine(nome + ", aqui você terá acesso a ações similares a do seu Banco.");
             Console.Write("Escolha uma das opções abaixo:" +
                 "\n1- Cálcular juros simples." +
                 "\n2- Cálcular juros compostos." +
-                "\n3- Amortização de empréstimo." +
-                "\n4- Investimento." +
-                "\n5- Cálculo de Parcelas." +
+                "\n3- Sistema de Amortização Constante (SAC)." +
+                "\n4- Sistema Price de Armotização (Tabela Price)." +
+                "\n5- Investimento." +
                 "\n6- Conversor de Moeda." +
                 "\n\nDigite a opção desejada: ");
             
@@ -291,10 +291,38 @@ namespace IniciandoEstudos
                     Console.WriteLine("Montante: R$ " + montante.ToString("C2"));
                     break;
                 case 3:
-                    Console.WriteLine("Teste 3");
+                    Console.WriteLine("\nCerto, então vamos cálcular o valor da parcelas segundo a tabela SAC.");
+
+                    Console.Write("Favor informar o valor: ");
+                    valor = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar o tempo em mesês: ");
+                    tempo = double.Parse(Console.ReadLine());
+
+                    amortizacao = (valor / tempo);
+                    Console.WriteLine("As parcelas serão de: R$ " + amortizacao.ToString("C2"));
                     break;
                 case 4:
-                    Console.WriteLine("Teste 4");
+                    Console.WriteLine("\nCerto, então vamos cálcular o valor da parcelas segundo a tabela Price.");
+
+                    Console.Write("Favor informar o valor do Empréstimo/ Financiamento: ");
+                    montante = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar o tempo em mesês: ");
+                    tempo = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar a taxa: ");
+                    taxa = double.Parse(Console.ReadLine());
+
+                    if (taxa >= 1)
+                    {
+                        taxa = (taxa / 100);
+                    }
+
+                    valor = ((montante * taxa) / ((1 - (Math.Pow((1 + taxa), -tempo)))));
+                    montante = valor * tempo;
+
+                    //amortizacao = (valor - ((montante * taxa) / (1-(Math.Pow((1+taxa),-tempo)))));
+                    Console.WriteLine("\nAs parcelas serão de: R$ " + valor.ToString("C2"));
+                    Console.WriteLine("O total do financiamento será de: R$ " + montante.ToString("C2"));
+
                     break;
                 case 5:
                     Console.WriteLine("Teste 5");
