@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -226,7 +227,8 @@ namespace IniciandoEstudos
         
         static void AplicacaoBancaria()
         {
-            double valor, taxa, tempo, juros, montante, amortizacao; //variável utilizada para valores financeiros
+            double valor, taxa, tempo, juros, montante, parcela, amortizacao, saldoDev; //variável utilizada para valores financeiros
+            string moeda = " "; // precisei atribuir um valor para corrigir o erro
 
             Console.WriteLine("Aplicação Bancária.");
             Console.WriteLine(nome + ", aqui você terá acesso a ações similares a do seu Banco.");
@@ -235,18 +237,17 @@ namespace IniciandoEstudos
                 "\n2- Cálcular juros compostos." +
                 "\n3- Sistema de Amortização Constante (SAC)." +
                 "\n4- Sistema Price de Armotização (Tabela Price)." +
-                "\n5- Investimento." +
-                "\n6- Conversor de Moeda." +
+                "\n5- Conversor de Moeda." +
                 "\n\nDigite a opção desejada: ");
             
             do
             {
                 opcao = int.Parse(Console.ReadLine());
-                if (opcao <= 0 && opcao >= 7)
+                if (opcao <= 0 && opcao >= 6)
                 {
                     Console.Write("Opção Inválida. Digite Novamente: ");
                 }
-            } while (opcao <= 0 && opcao >= 7);
+            } while (opcao <= 0 && opcao >= 6);
         
             switch (opcao)
             {
@@ -267,8 +268,8 @@ namespace IniciandoEstudos
 
                     juros = (valor * taxa * tempo);
                     montante = juros + valor;
-                    Console.WriteLine("\nJuros Simples: R$ " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
-                    Console.WriteLine("Montante: R$ " + montante.ToString("C2"));
+                    Console.WriteLine("\nJuros Simples: " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
+                    Console.WriteLine("Montante: " + montante.ToString("C2"));
                     break;
                 case 2:
                     Console.WriteLine("\nCerto, então vamos cálcular o Juros Compostos.");
@@ -287,19 +288,36 @@ namespace IniciandoEstudos
 
                     montante = (valor * Math.Pow((1 + taxa), tempo));
                     juros = montante - valor;
-                    Console.WriteLine("\nJuros Simples: R$ " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
-                    Console.WriteLine("Montante: R$ " + montante.ToString("C2"));
+                    Console.WriteLine("\nJuros Simples: " + juros.ToString("C2")); // ToString() converte em string. E "C2": especifica o número de casas decimais.
+                    Console.WriteLine("Montante: " + montante.ToString("C2"));
                     break;
                 case 3:
                     Console.WriteLine("\nCerto, então vamos cálcular o valor da parcelas segundo a tabela SAC.");
-
-                    Console.Write("Favor informar o valor: ");
-                    valor = double.Parse(Console.ReadLine());
+                    
+                    Console.Write("Favor informar o valor do Empréstimo/ Financiamento: ");
+                    montante = double.Parse(Console.ReadLine());
                     Console.Write("Favor informar o tempo em mesês: ");
                     tempo = double.Parse(Console.ReadLine());
+                    Console.Write("Favor informar a taxa: ");
+                    taxa = double.Parse(Console.ReadLine());
 
-                    amortizacao = (valor / tempo);
-                    Console.WriteLine("As parcelas serão de: R$ " + amortizacao.ToString("C2"));
+                    if (taxa >= 1)
+                    {
+                        taxa = (taxa / 100);
+                    }
+
+                    Console.WriteLine("\n|  Parcela   |  Amortização  |  Juros   |  Saldo Devedor   |  Pagamento  |");
+                    amortizacao = montante / tempo;
+
+                    for ( int i = 1; i <= tempo; i++)
+                    {   
+                        juros = montante * taxa;
+                        montante = montante - amortizacao;
+                        parcela = amortizacao + juros;
+
+                        Console.WriteLine($"|  {i}   |  {amortizacao.ToString("C2")}  |  {juros.ToString("C2")}  |  {montante.ToString("C2")}   |  {parcela.ToString("C2")}   |");
+                    }
+                    
                     break;
                 case 4:
                     Console.WriteLine("\nCerto, então vamos cálcular o valor da parcelas segundo a tabela Price.");
@@ -320,15 +338,64 @@ namespace IniciandoEstudos
                     montante = valor * tempo;
 
                     //amortizacao = (valor - ((montante * taxa) / (1-(Math.Pow((1+taxa),-tempo)))));
-                    Console.WriteLine("\nAs parcelas serão de: R$ " + valor.ToString("C2"));
-                    Console.WriteLine("O total do financiamento será de: R$ " + montante.ToString("C2"));
+                    Console.WriteLine("\nAs parcelas serão de: " + valor.ToString("C2"));
+                    Console.WriteLine("O total do financiamento será de: " + montante.ToString("C2"));
 
                     break;
                 case 5:
-                    Console.WriteLine("Teste 5");
-                    break;
-                case 6:
-                    Console.WriteLine("Teste 6");
+                    Console.WriteLine("\nCerto, então vamos ao Conversor de Moedas.");
+                    Console.WriteLine("1-USD  |  2-EUR  |  3-GBP  |  4-CNY   |  5-ARS  |  6-BTC  |  7-ETH  |");
+                    Console.Write("Digite a opção desejada: ");
+                    
+                    opcao = int.Parse(Console.ReadLine());
+                    
+                    Console.Write("Informe quanto deseja converter: R$ ");
+                    valor = double.Parse(Console.ReadLine());
+
+                    switch(opcao)
+                    {
+                        case 1:
+                            valor = valor * 0.2;
+                            moeda = "USD";
+                            Console.WriteLine("\nConvertendo Reais em Dólar.");
+                            break;
+                        case 2:
+                            valor = valor * 0.19;
+                            moeda = "EUR";
+                            Console.WriteLine("\nConvertendo Reais em Euro.");
+                            break;
+                        case 3:
+                            valor = valor * 0.16;
+                            moeda = "GBP";
+                            Console.WriteLine("\nConvertendo Reais em Libra.");
+                            break;
+                        case 4:
+                            valor = valor * 1.45;
+                            moeda = "CNY";
+                            Console.WriteLine("\nConvertendo Reais em Yuan Chinês.");
+                            break;
+                        case 5:
+                            valor = valor * 165.89;
+                            moeda = "ARS";
+                            Console.WriteLine("\nConvertendo Reais em Pesos Argentinos.");
+                            break;
+                        case 6:
+                            valor = valor * 0.0000051;
+                            moeda = "BTC";
+                            Console.WriteLine("\nConvertendo Reais em BTC.");
+                            break;
+                        case 7:
+                            valor = valor * 0.0091;
+                            moeda = "ETH";
+                            Console.WriteLine("\nConvertendo Reais em Ethereum.");
+                            break;
+                        default:
+                            Console.WriteLine("\nOpção Inválida");
+                            break;
+                    }
+
+                    Console.Write($"O valor convertido é de: {moeda} {Math.Round(valor, 2):F2}");
+
                     break;
             }
 
