@@ -4,6 +4,9 @@ Material inicial retirado do vídeo do youtube
 <br> Canal: Vitor Lima - Ciência da Computação
 <br>
 <br>
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+<br>
 <br>
 <br>
 <br>
