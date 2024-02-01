@@ -1,0 +1,7 @@
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\bin\Debug\TrilhaMicrosoftAnotacoes.exe.config
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\bin\Debug\TrilhaMicrosoftAnotacoes.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\bin\Debug\TrilhaMicrosoftAnotacoes.pdb
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\obj\Debug\TrilhaMicrosoftAnotacoes.csproj.AssemblyReference.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\obj\Debug\TrilhaMicrosoftAnotacoes.csproj.CoreCompileInputs.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\obj\Debug\TrilhaMicrosoftAnotacoes.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\TrilhaMicrosoftAnotacoes\obj\Debug\TrilhaMicrosoftAnotacoes.pdb
