@@ -1,0 +1,7 @@
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\obj\Debug\ProjetoGuiado-CalculadoraGPA.csproj.AssemblyReference.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\obj\Debug\ProjetoGuiado-CalculadoraGPA.csproj.CoreCompileInputs.cache
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\bin\Debug\ProjetoGuiado-CalculadoraGPA.exe.config
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\bin\Debug\ProjetoGuiado-CalculadoraGPA.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\bin\Debug\ProjetoGuiado-CalculadoraGPA.pdb
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\obj\Debug\ProjetoGuiado-CalculadoraGPA.exe
+C:\Users\sigor\OneDrive - Fatec Centro Paula Souza\Documents\GitHub\.Estudos-em-C_Sharp\ProjetoGuiado-CalculadoraGPA\obj\Debug\ProjetoGuiado-CalculadoraGPA.pdb

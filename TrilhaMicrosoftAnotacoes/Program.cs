@@ -36,7 +36,13 @@ namespace TrilhaMicrosoftAnotacoes
             decimal res = (temp - 32) * 5 / 9;
             Console.WriteLine("The temperature is " + Math.Round(res,2) + " Celsius.");
 
-
+            Console.WriteLine("\n\nCálculando Média");
+            int sofiaN1 = 8;
+            int sofiaN2 = 4;
+            int sofiaN3 = 7;
+            decimal mediaFin = (decimal) ( sofiaN1 + sofiaN2 + sofiaN3 ) / 3;
+            Console.WriteLine("Aluno\t\tMédia");
+            Console.WriteLine($"{nome}\t\t{Math.Round(mediaFin,1)}");
 
             Console.Write("\n\nPressione \"Enter\" para encerrar"); // O Uso da   \"...\" permite que o texto inclua aspas duplas na saída  
             Console.Read();
